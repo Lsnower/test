@@ -1,0 +1,19 @@
+<view>
+    <swiper class="con-swiper" >
+        <swiper-item wx:for="{{map}}">
+            <image src="{{item.image}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="post-containter" wx:for="{{list}}">
+        <view class="post-auther-date">
+            <image class="post-author" src="{{item.navimage}}"></image>
+            <text class="post-date">{{item.time}}</text>
+        </view>
+        <text class="post-title">{{item.title}}</text>
+        <image class="post-image" src="{{item.mainimage}}"></image>
+        <text class="post-content">
+           {{item.maintext}}
+        </text>
+    </view>
+    
+</view>
